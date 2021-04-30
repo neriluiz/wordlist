@@ -1,6 +1,11 @@
+# testar autenticação e confidencialidade
+# ferramenta de força bruta
 import itertools
 
-resultado = itertools.permutations('abcdef', 3)
+string = input("String a ser permutada: ")
+
+# Com o segundo argumento, a permutação vira combinação:
+resultado = itertools.permutations(string)
 
 for i in resultado:
     print(''.join(i))
